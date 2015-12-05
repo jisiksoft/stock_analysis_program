@@ -1,0 +1,241 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\RealTimeChart.rc2""  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.\r\n"
+    "#include ""l.KOR\\afxres.rc""      // 표준 구성 요소입니다.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\RealTimeChart.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "RealTimeChart 정보"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "RealTimeChart, 버전 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2014",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "확인",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_REALTIMECHART_DIALOG DIALOGEX 0, 0, 759, 432
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "RealTimeChart"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "REAL-TIME CHART",IDC_STATIC_TITLE,662,14,85,20
+    EDITTEXT        IDC_EDIT_ID,679,40,67,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PW,679,57,67,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PW2,679,74,67,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "I D",IDC_STATIC,661,44,10,8
+    LTEXT           "비밀번호",IDC_STATIC,646,61,28,8
+    LTEXT           "공인인증",IDC_STATIC,646,78,28,8
+    LTEXT           "접속서버",IDC_STATIC,647,93,28,8
+    COMBOBOX        IDC_COMBO_SERVER,679,91,67,39,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "접속",IDC_BTN_CONNECT,661,116,37,26
+    COMBOBOX        IDC_COMBO_CALL,678,156,67,39,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_PUT,678,171,67,39,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Call",IDC_STATIC,661,160,11,8
+    LTEXT           "Put",IDC_STATIC,661,173,12,8
+    LTEXT           "-",IDC_STATIC_STARTCALL,687,214,22,8
+    LTEXT           "시작가",IDC_STATIC,685,201,23,8
+    LTEXT           "현재가",IDC_STATIC,713,201,23,8
+    LTEXT           "-",IDC_STATIC_STARTPUT,687,227,23,8
+    LTEXT           "-",IDC_STATIC_CURPUT,715,227,24,8
+    LTEXT           "-",IDC_STATIC_CURCALL,715,214,24,8
+    LTEXT           "Call",IDC_STATIC,661,214,11,8
+    LTEXT           "Put",IDC_STATIC,661,227,12,8
+    GROUPBOX        "",IDC_STATIC,652,192,93,47
+    EDITTEXT        IDC_EDIT_BOLLINGERAVG,697,250,19,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BOLLINGERTIME,718,250,19,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MACD1,678,267,19,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MACD2,698,266,19,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MACD3,718,267,19,14,ES_AUTOHSCROLL
+    LTEXT           "-",IDC_STATIC_MESSAGE,653,376,94,8
+    GROUPBOX        "MACD Graph",IDC_STATIC,676,285,63,29
+    CONTROL         "Call",IDC_RADIO_MACDCALL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,680,297,22,10
+    CONTROL         "Put",IDC_RADIO_MACDPUT,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,710,297,27,10
+    GROUPBOX        "Message",IDC_STATIC,650,365,103,25
+    PUSHBUTTON      "실행하기",IDC_BTN_RUN,652,321,52,35
+    PUSHBUTTON      "Clear",IDC_BTN_CLEAR,708,321,37,26
+    PUSHBUTTON      "종료",IDC_BTN_CLOSE,708,116,37,26
+    LTEXT           "created by SEHOON KIM",IDC_STATIC,673,407,78,8
+    LTEXT           "kimsehoon@hotmail.com",IDC_STATIC,673,416,78,8
+    CONTROL         "Bollinger Band",IDC_CHECK_BOLLINGER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,643,253,53,10
+    CONTROL         "MACD",IDC_CHECK_MACD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,643,269,34,10
+    CONTROL         "",IDC_CHECK_DRAW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,739,253,8,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "TODO: <파일 설명>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "RealTimeChart.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "RealTimeChart.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_REALTIMECHART_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 752
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 425
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "RealTimeChart 정보(&A)..."
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\RealTimeChart.rc2"  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.
+#include "l.KOR\afxres.rc"      // 표준 구성 요소입니다.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

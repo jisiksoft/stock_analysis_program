@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StockAnalysis", "StockAnalysis\StockAnalysis.vcproj", "{57DF1816-F96D-4622-9826-D20F8AE3E493}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57DF1816-F96D-4622-9826-D20F8AE3E493}.Debug|Win32.ActiveCfg = Debug|Win32
+		{57DF1816-F96D-4622-9826-D20F8AE3E493}.Debug|Win32.Build.0 = Debug|Win32
+		{57DF1816-F96D-4622-9826-D20F8AE3E493}.Release|Win32.ActiveCfg = Release|Win32
+		{57DF1816-F96D-4622-9826-D20F8AE3E493}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
